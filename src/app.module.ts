@@ -22,6 +22,7 @@ import { MontreModule } from './montre/montre.module';
 import { GenreModule } from './genre/genre.module';
 import { CommandeModule } from './commande/commande.module';
 import { MarqueModule } from './marque/marque.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -54,6 +55,7 @@ import { MarqueModule } from './marque/marque.module';
     GenreModule,
     CommandeModule,
     MarqueModule,
+    AuthModule,
   ],
   controllers: [AppController],
   providers: [AppService],
