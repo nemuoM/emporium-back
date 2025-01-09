@@ -4,10 +4,10 @@ import { Genre } from 'src/entities/Genre';
 
 @Controller('genre')
 export class GenreController {
-  constructor(private readonly genreService: GenreService) { }
-  
+  constructor(private readonly genreService: GenreService) {}
+
   @Get()
-  findAll(): Promise<Genre[]>{
-    return this.genreService.findAll()
+  findAll(): Promise<Genre[]> {
+    return this.genreService.findAll();
   }
 }

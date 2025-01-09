@@ -4,10 +4,10 @@ import { Client } from 'src/entities/Client';
 
 @Controller('client')
 export class ClientController {
-  constructor(private readonly clientService: ClientService) { }
-  
+  constructor(private readonly clientService: ClientService) {}
+
   @Get()
-  findAll(): Promise<Client[]>{
-    return this.clientService.findAll()
+  findAll(): Promise<Client[]> {
+    return this.clientService.findAll();
   }
 }

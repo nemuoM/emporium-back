@@ -5,12 +5,12 @@ import { Repository } from 'typeorm';
 
 @Injectable()
 export class CommandeService {
-    constructor(
-        @InjectRepository(Commande)
-        private cmdRepo: Repository<Commande>
-    ) { }
-    
-    findAll() {
-        return this.cmdRepo.find()
-    }
+  constructor(
+    @InjectRepository(Commande)
+    private cmdRepo: Repository<Commande>,
+  ) {}
+
+  findAll() {
+    return this.cmdRepo.find();
+  }
 }

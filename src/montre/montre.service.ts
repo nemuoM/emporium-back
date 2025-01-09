@@ -5,12 +5,12 @@ import { Repository } from 'typeorm';
 
 @Injectable()
 export class MontreService {
-    constructor(
-        @InjectRepository(Montre)
-        private montreRepo: Repository<Montre>
-    ) { }
-    
-    findAll() {
-        return this.montreRepo.find()
-    }
+  constructor(
+    @InjectRepository(Montre)
+    private montreRepo: Repository<Montre>,
+  ) {}
+
+  findAll() {
+    return this.montreRepo.find();
+  }
 }

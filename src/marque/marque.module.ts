@@ -5,7 +5,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { Marque } from 'src/entities/Marque';
 
 @Module({
-  imports:[TypeOrmModule.forFeature([Marque])],
+  imports: [TypeOrmModule.forFeature([Marque])],
   controllers: [MarqueController],
   providers: [MarqueService],
 })

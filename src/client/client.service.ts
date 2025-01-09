@@ -5,12 +5,12 @@ import { Repository } from 'typeorm';
 
 @Injectable()
 export class ClientService {
-    constructor(
-        @InjectRepository(Client)
-        private clientRepo: Repository<Client>
-    ) { }
-    
-    findAll() {
-        return this.clientRepo.find();
-    }
+  constructor(
+    @InjectRepository(Client)
+    private clientRepo: Repository<Client>,
+  ) {}
+
+  findAll() {
+    return this.clientRepo.find();
+  }
 }

@@ -5,12 +5,12 @@ import { Repository } from 'typeorm';
 
 @Injectable()
 export class GenreService {
-    constructor(
-        @InjectRepository(Genre)
-        private genreRepo: Repository<Genre>
-    ) { }
-    
-    findAll() {
-        return this.genreRepo.find()
-    }
+  constructor(
+    @InjectRepository(Genre)
+    private genreRepo: Repository<Genre>,
+  ) {}
+
+  findAll() {
+    return this.genreRepo.find();
+  }
 }

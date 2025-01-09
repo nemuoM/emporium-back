@@ -4,10 +4,10 @@ import { Commande } from 'src/entities/Commande';
 
 @Controller('commande')
 export class CommandeController {
-  constructor(private readonly commandeService: CommandeService) { }
-  
+  constructor(private readonly commandeService: CommandeService) {}
+
   @Get()
   findAll(): Promise<Commande[]> {
-    return this.commandeService.findAll()
+    return this.commandeService.findAll();
   }
 }

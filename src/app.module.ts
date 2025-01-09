@@ -26,14 +26,28 @@ import { MarqueModule } from './marque/marque.module';
 @Module({
   imports: [
     TypeOrmModule.forRoot({
-      "type": "mariadb",
-      "host": "127.0.0.1",  // Vérifiez que c'est bien localhost si votre DB est locale
-      "port": 3307,  // Assurez-vous que le port est correct
-      "username": "emporium",  // Vérifiez le nom d'utilisateur
-      "password": "DumB0__2500!",  // Vérifiez le mot de passe
-      "database": "db_emporium",  // Vérifiez le nom de la base de données
-      "synchronize": false,
-      "entities": [ChangementStatut, Client, Commande, Couleur, DetailsMontre, Genre, Marque, Matiere, Montre, Mouvement, Roles, Statut, Style],
+      type: 'mariadb',
+      host: '127.0.0.1', // Vérifiez que c'est bien localhost si votre DB est locale
+      port: 3307, // Assurez-vous que le port est correct
+      username: 'emporium', // Vérifiez le nom d'utilisateur
+      password: 'DumB0__2500!', // Vérifiez le mot de passe
+      database: 'db_emporium', // Vérifiez le nom de la base de données
+      synchronize: false,
+      entities: [
+        ChangementStatut,
+        Client,
+        Commande,
+        Couleur,
+        DetailsMontre,
+        Genre,
+        Marque,
+        Matiere,
+        Montre,
+        Mouvement,
+        Roles,
+        Statut,
+        Style,
+      ],
     }),
     ClientModule,
     MontreModule,
