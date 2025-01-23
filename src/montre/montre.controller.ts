@@ -7,7 +7,7 @@ export class MontreController {
   constructor(private readonly montreService: MontreService) {}
 
   @Get()
-  findAll(): Promise<Montre[]> {
+  async findAll() {
     return this.montreService.findAll();
   }
 }

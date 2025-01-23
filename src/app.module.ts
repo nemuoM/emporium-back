@@ -23,6 +23,8 @@ import { GenreModule } from './genre/genre.module';
 import { CommandeModule } from './commande/commande.module';
 import { MarqueModule } from './marque/marque.module';
 import { AuthModule } from './auth/auth.module';
+import { StatutModule } from './statut/statut.module';
+import { StyleModule } from './style/style.module';
 
 @Module({
   imports: [
@@ -56,6 +58,8 @@ import { AuthModule } from './auth/auth.module';
     CommandeModule,
     MarqueModule,
     AuthModule,
+    StatutModule,
+    StyleModule,
   ],
   controllers: [AppController],
   providers: [AppService],
